@@ -195,13 +195,6 @@
                   </div>
 
                   <a
-                    href="client_account/session/new.html"
-                    class="header__control-btn header__cabinet"
-                  >
-                    <span class="icon icon-user"></span>
-                  </a>
-
-                  <a
                     href="cart_items.html"
                     class="header__control-btn header__cart"
                   >
@@ -348,6 +341,7 @@
         <div
           class="layout widget-type_system_widget_v4_collections_menu_1"
           style="
+            border: none;
             --align-items: flex-start;
             --layout-wide-bg: true;
             --layout-pt: 0.5rem;
@@ -559,18 +553,18 @@
                       <picture>
                         <source
                           media="(min-width:768px)"
-                          data-srcset="img/categories/4.webp"
+                          data-srcset="img/categories/4.jpg"
                           type="image/webp"
                           class="lazyload"
                         />
                         <source
                           media="(max-width:767px)"
-                          data-srcset="img/categories/4.webp"
+                          data-srcset="img/categories/4.jpg"
                           type="image/webp"
                           class="lazyload"
                         />
                         <img
-                          data-src="img/categories/4.webp"
+                          data-src="img/categories/4.jpg"
                           class="lazyload"
                         />
                       </picture>
@@ -582,18 +576,18 @@
                       <picture>
                         <source
                           media="(min-width:768px)"
-                          data-srcset="img/categories/5.jpg"
+                          data-srcset="img/categories/5.png"
                           type="image/webp"
                           class="lazyload"
                         />
                         <source
                           media="(max-width:767px)"
-                          data-srcset="img/categories/5.jpg"
+                          data-srcset="img/categories/5.png"
                           type="image/webp"
                           class="lazyload"
                         />
                         <img
-                          data-src="img/categories/5.jpg"
+                          data-src="img/categories/5.png"
                           class="lazyload"
                         />
                       </picture>
@@ -616,7 +610,7 @@
                                 >
                                   <div class="special-products__head">
                                     <div class="widget_heading tabs__head-label">
-                                      Смотреть все
+                                      Все
                                     </div>
                                   </div>
                                 </div>
@@ -6208,7 +6202,7 @@
             --delimeter-type: solid;
             --border-size: 3px;
             --layout-wide-bg: true;
-            --layout-pt: 1vw;
+            --layout-pt: 2vw;
             --layout-pb: 1vw;
             --layout-wide-content: false;
             --layout-edge: false;
@@ -6234,7 +6228,7 @@
             --pay-img-4: 'https://static.insales-cdn.com/files/1/7521/19922273/original/СБП_логотип.png';
             --hide-social: false;
             --layout-wide-bg: true;
-            --layout-pt: 2vw;
+            --layout-pt: 1vw;
             --layout-pb: 2vw;
             --layout-content-max-width: 1408px;
             --layout-wide-content: false;
@@ -7050,7 +7044,8 @@
       border: none !important;
     }
 
-    .tabs-prod__navigation .tabs-prod__title._tab-active .tabs-prod__label::before{
+    .tabs-prod__navigation .tabs-prod__title._tab-active .tabs-prod__label::before,
+    .is-active .tabs__head-label::before{
       content: "";
       position: absolute;
       bottom: -3px;
@@ -7091,8 +7086,8 @@
       box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
     }
 
-    .img-ratio img {
-      /* object-fit: c !important; */
+    header .layout__content {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
     
     .product-preview__area-title {
@@ -8679,7 +8674,7 @@
     .widget-type_system_widget_v4_special_products_tabs_9
       .splide__slide:first-child
       .tabs__head-item {
-      margin-left: var(--layout-side-padding);
+      /* margin-left: var(--layout-side-padding); */
     }
     .widget-type_system_widget_v4_special_products_tabs_9 .tabs__head {
       margin-bottom: 1.5rem;
