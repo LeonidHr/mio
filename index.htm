@@ -155,13 +155,13 @@
                 </div>
 
                 <div class="header__area-logo">
-                  <span class="header__logo">
+                  <a href="index.htm" class="header__logo">
                     <img
                       src="img/logo.svg"
                       alt="Health store"
                       title="Health store"
                     />
-                  </span>
+                  </ф>
                 </div>
 
                 <div class="header__area-controls">
@@ -8891,7 +8891,7 @@
     .widget-type_system_widget_v4_header_11 .header__content {
       display: grid;
       grid-template-areas: "burger logo controls" "collections collections collections";
-      grid-template-columns: 1fr var(--logo-max-width, 220px) 1fr;
+      grid-template-columns: 1fr 250px 1fr;
       grid-row-gap: var(--header-pt);
       align-items: center;
     }
@@ -8970,9 +8970,15 @@
     }
     .widget-type_system_widget_v4_header_11 .header__logo {
       display: inline-block;
-      max-width: var(--logo-max-width, 260px);
       text-decoration: none;
     }
+    .header__logo {
+      /* width: 300px; */
+    }
+    .header__logo img {
+      max-width: 100%;
+    }
+
     @media screen and (max-width: 767px) {
       .widget-type_system_widget_v4_header_11 .header__logo {
         max-width: var(--logo-max-width, 120px);
@@ -9891,8 +9897,8 @@
       font-size: 1.5rem;
       font-weight: 600;
       border-bottom: 1px solid var(--bg-minor-shade);
-      padding-bottom: 2rem;
-      margin-bottom: 2rem;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
     }
     @media screen and (max-width: 767px) {
       .widget-type_system_widget_v4_header_11 .menu__head {
