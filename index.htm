@@ -7832,7 +7832,6 @@
                   />
 
                   <img
-                    style="object-fit: contain;"
                     data-src="img/banner/2.png"
                     class="lazyload"
                   />
@@ -9356,6 +9355,9 @@
         padding: var(--banner-pt) var(--layout-side-padding) var(--banner-pb)
           var(--layout-side-padding);
       }
+    }
+    .widget-type_system_widget_v4_page_banner_2 .banner-list__item .banner-list__item-image:before {
+      background: #fff !important;
     }
     .widget-type_system_widget_v4_page_banner_2
       .banner-list__item
@@ -12016,6 +12018,7 @@
       box-shadow: none;
       padding: 0;
     }
+
     .widget-type_system_widget_v4_header_11[style*="--catalog-location:side-panel"]
       .mobile-collections
       .header__collections-submenu-content:before,
@@ -12131,7 +12134,7 @@
     .widget-type_system_widget_v4_header_11 .header__content {
       display: grid;
       grid-template-areas: "burger logo controls" "collections collections collections";
-      grid-template-columns: 1fr 250px 1fr;
+      grid-template-columns: 1fr 300px 1fr;
       grid-row-gap: var(--header-pt);
       align-items: center;
     }
