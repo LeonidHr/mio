@@ -48,6 +48,7 @@ async function viewProduct() {
 
   path.insertAdjacentHTML("beforeend", pathContent);
 
+
   const postEl = `
     <div data-gallery-type="all-photos" class="product is-zero-count-preorder">
     <div class="product__area-photo">
@@ -438,15 +439,8 @@ async function viewProduct() {
               <div class="cut-block__content-wrapper">
                 <div class="cut-block__content">
                   <div class="product__description-content static-text">
-                    <p>
-                      <span
-                        >Формула кондиционера &laquo;Бразильский
-                        Мурумуру&raquo; разработана для окрашенных и
-                        жестких волос. Уходовое средство хорошо смягчает и
-                        увлажняет, глубоко питает и борется с
-                        ломкостью.</span
-                      >
-                    </p>
+                  
+                   
                     <div
                       class="t396__elem tn-elem tn-elem__3127325921620230892027"
                       data-elem-id="1620230892027"
@@ -468,249 +462,7 @@ async function viewProduct() {
                     >
                       <div class="tn-atom"></div>
                     </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620230920066"
-                      data-elem-id="1620230920066"
-                      data-elem-type="text"
-                      data-field-top-value="55"
-                      data-field-top-res-640-value="25"
-                      data-field-top-res-320-value="25"
-                      data-field-left-value="20"
-                      data-field-left-res-960-value="10"
-                      data-field-left-res-640-value="10"
-                      data-field-left-res-320-value="0"
-                      data-field-width-value="120"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value=""
-                      data-field-widthunits-value="px"
-                      data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                    >
-                      <div class="tn-atom"><strong>Действие</strong></div>
-                    </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620231380695"
-                      data-elem-id="1620231380695"
-                      data-elem-type="shape"
-                      data-field-top-value="299"
-                      data-field-top-res-960-value="304"
-                      data-field-top-res-640-value="351"
-                      data-field-top-res-480-value="384"
-                      data-field-top-res-320-value="394"
-                      data-field-left-value="504"
-                      data-field-left-res-960-value="394"
-                      data-field-left-res-640-value="233"
-                      data-field-left-res-480-value="154"
-                      data-field-left-res-320-value="2"
-                      data-field-height-value="5"
-                      data-field-width-value="5"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value="px"
-                      data-field-widthunits-value="px"
-                      data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits"
-                    >
-                      <div class="tn-atom"></div>
-                    </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620231380384"
-                      data-elem-id="1620231380384"
-                      data-elem-type="text"
-                      data-field-top-value="290"
-                      data-field-top-res-960-value="296"
-                      data-field-top-res-640-value="342"
-                      data-field-top-res-480-value="375"
-                      data-field-top-res-320-value="386"
-                      data-field-left-value="521"
-                      data-field-left-res-960-value="411"
-                      data-field-left-res-640-value="250"
-                      data-field-left-res-480-value="171"
-                      data-field-left-res-320-value="19"
-                      data-field-width-value="477"
-                      data-field-width-res-640-value="370"
-                      data-field-width-res-480-value="300"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value=""
-                      data-field-widthunits-value="px"
-                      data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                    >
-                      <ul>
-                        <li>
-                          Придает фантастический сияющий блеск волосам
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620231366717"
-                      data-elem-id="1620231366717"
-                      data-elem-type="text"
-                      data-field-top-value="218"
-                      data-field-top-res-960-value="222"
-                      data-field-top-res-640-value="268"
-                      data-field-top-res-480-value="279"
-                      data-field-top-res-320-value="290"
-                      data-field-left-value="521"
-                      data-field-left-res-960-value="411"
-                      data-field-left-res-640-value="250"
-                      data-field-left-res-480-value="171"
-                      data-field-left-res-320-value="19"
-                      data-field-width-value="477"
-                      data-field-width-res-640-value="370"
-                      data-field-width-res-480-value="300"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value=""
-                      data-field-widthunits-value="px"
-                      data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                    >
-                      <ul>
-                        <li class="tn-atom">
-                          Эластичные, гладкие волосы существенно более
-                          легко расчесываются и укладываются
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620231349313"
-                      data-elem-id="1620231349313"
-                      data-elem-type="text"
-                      data-field-top-value="124"
-                      data-field-top-res-960-value="126"
-                      data-field-top-res-640-value="150"
-                      data-field-top-res-480-value="161"
-                      data-field-top-res-320-value="172"
-                      data-field-left-value="521"
-                      data-field-left-res-960-value="411"
-                      data-field-left-res-640-value="250"
-                      data-field-left-res-480-value="171"
-                      data-field-left-res-320-value="19"
-                      data-field-width-value="477"
-                      data-field-width-res-640-value="370"
-                      data-field-width-res-480-value="300"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value=""
-                      data-field-widthunits-value="px"
-                      data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                    >
-                      <ul>
-                        <li class="tn-atom">
-                          Завершает процесс обновления и восстановления
-                          волос, делая их нереально мягкими, приятными на
-                          ощупь, менее пушистыми
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      class="t396__elem tn-elem tn-elem__3127325921620231013630"
-                      data-elem-id="1620231013630"
-                      data-elem-type="text"
-                      data-field-top-value="74"
-                      data-field-top-res-960-value="74"
-                      data-field-top-res-640-value="76"
-                      data-field-top-res-480-value="87"
-                      data-field-top-res-320-value="98"
-                      data-field-left-value="521"
-                      data-field-left-res-960-value="411"
-                      data-field-left-res-640-value="250"
-                      data-field-left-res-480-value="171"
-                      data-field-left-res-320-value="19"
-                      data-field-width-value="517"
-                      data-field-width-res-640-value="370"
-                      data-field-width-res-480-value="300"
-                      data-field-axisy-value="top"
-                      data-field-axisx-value="left"
-                      data-field-container-value="grid"
-                      data-field-topunits-value="px"
-                      data-field-leftunits-value="px"
-                      data-field-heightunits-value=""
-                      data-field-widthunits-value="px"
-                      data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                    >
-                      <ul>
-                        <li class="tn-atom">
-                          Усиливает эффект применения шампуня
-                          &laquo;Бразильский Мурумуру&raquo;
-                        </li>
-                      </ul>
-                      <p>&nbsp;</p>
-                      <div
-                        class="t396__elem tn-elem tn-elem__3127328701620230920066"
-                        data-elem-id="1620230920066"
-                        data-elem-type="text"
-                        data-field-top-value="77"
-                        data-field-top-res-640-value="77"
-                        data-field-top-res-480-value="35"
-                        data-field-top-res-320-value="35"
-                        data-field-left-value="20"
-                        data-field-left-res-640-value="10"
-                        data-field-left-res-480-value="10"
-                        data-field-left-res-320-value="0"
-                        data-field-width-value="120"
-                        data-field-axisy-value="top"
-                        data-field-axisx-value="left"
-                        data-field-container-value="grid"
-                        data-field-topunits-value="px"
-                        data-field-leftunits-value="px"
-                        data-field-heightunits-value=""
-                        data-field-widthunits-value="px"
-                        data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                      >
-                        <div class="tn-atom">
-                          <strong>Применение</strong>
-                        </div>
-                      </div>
-                      <div
-                        class="t396__elem tn-elem tn-elem__3127328701620231013630"
-                        data-elem-id="1620231013630"
-                        data-elem-type="text"
-                        data-field-top-value="80"
-                        data-field-top-res-960-value="80"
-                        data-field-top-res-640-value="67"
-                        data-field-top-res-480-value="115"
-                        data-field-top-res-320-value="115"
-                        data-field-left-value="520"
-                        data-field-left-res-960-value="410"
-                        data-field-left-res-640-value="250"
-                        data-field-left-res-480-value="170"
-                        data-field-left-res-320-value="0"
-                        data-field-width-value="517"
-                        data-field-width-res-640-value="377"
-                        data-field-width-res-480-value="297"
-                        data-field-width-res-320-value="320"
-                        data-field-axisy-value="top"
-                        data-field-axisx-value="left"
-                        data-field-container-value="grid"
-                        data-field-topunits-value="px"
-                        data-field-leftunits-value="px"
-                        data-field-heightunits-value=""
-                        data-field-widthunits-value="px"
-                        data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-                      >
-                        <div class="tn-atom">
-                          Нанести после шампуня на влажные волосы.
-                          Распределите продукт по длине, оставьте на 2-3
-                          минуты, а затем смойте водой комфортной
-                          температуры.
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -835,6 +587,18 @@ async function viewProduct() {
   `;
 
   product.insertAdjacentHTML("beforeend", postEl);
+
+
+  const descr = document.querySelector('.product__description-content');
+  
+  postsData[lastButtonClicksJson[0]].descr.forEach((text, i) => {
+    descr.insertAdjacentHTML("beforeend", `
+      <p>
+        ${postsData[lastButtonClicksJson[0]].descr[i]}  
+      </p>
+    `);
+  });
+
 }
 
 viewProduct();
