@@ -22,7 +22,7 @@ function viewAllProducts(postsData) {
 
   postsData.forEach((el, i) => {
     const postEl = `
-      <div class="product-preview-elem">
+      <div id="${el.id}" class="product-preview-elem">
         <form
           action="/cart_items"
           method="post"
@@ -35,7 +35,7 @@ function viewAllProducts(postsData) {
                 <div class="img-ratio img-fit">
                   <div class="img-ratio__inner">
                     <a
-                      href="product/product-${i}.html"
+                      href="product/product.html"
                     >
                       <picture>
                         <source
@@ -89,7 +89,7 @@ function viewFoodProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'food') {
       const postEl = `
-        <div class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem">
           <form
             action="/cart_items"
             method="post"
@@ -102,7 +102,7 @@ function viewFoodProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product-${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -157,7 +157,7 @@ function viewSleepProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'sleep') {
       const postEl = `
-        <div class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem">
           <form
             action="/cart_items"
             method="post"
@@ -170,7 +170,7 @@ function viewSleepProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product-${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -225,7 +225,7 @@ function viewThinkProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'think') {
       const postEl = `
-        <div class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem">
           <form
             action="/cart_items"
             method="post"
@@ -238,7 +238,7 @@ function viewThinkProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product-${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -293,7 +293,7 @@ function viewImmunityProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'immunity') {
       const postEl = `
-        <div class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem">
           <form
             action="/cart_items"
             method="post"
@@ -306,7 +306,7 @@ function viewImmunityProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product-${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -362,7 +362,7 @@ function viewOtherProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'other') {
       const postEl = `
-        <div class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem">
           <form
             action="/cart_items"
             method="post"
@@ -375,7 +375,7 @@ function viewOtherProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product-${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -425,3 +425,5 @@ function viewOtherProducts(postsData) {
 }
 
 viewProducts();
+
+
