@@ -219,13 +219,6 @@
                   </div>
 
                   <a
-                    href="../client_account/session/new.html"
-                    class="header__control-btn header__cabinet"
-                  >
-                    <span class="icon icon-user"></span>
-                  </a>
-
-                  <a
                     href="../cart_items.html"
                     class="header__control-btn header__cart"
                   >
@@ -411,6 +404,15 @@
                     class="breadcrumb-link"
                     title="Alan Hadash"
                     href="../collection/alan-hadash.html"
+                    >Бады</a
+                  >
+                </li>
+
+                <li class="breadcrumb-item" data-breadcrumbs="2">
+                  <a
+                    class="breadcrumb-link"
+                    title="Alan Hadash"
+                    href="../collection/alan-hadash.html"
                     >Triphala</a
                   >
                 </li>
@@ -459,95 +461,11 @@
               data-gallery-type="all-photos"
               class="product is-zero-count-preorder"
             >
-              <!-- <div class="product__area-photo">
-                <div class="product__one-photo">
-                  <a
-                    class="img-ratio img-ratio_cover product__photo"
-                    data-fslightbox="product-photos-lightbox-638164838"
-                    data-type="image"
-                    href="../img/1.jfif"
-                  >
-                    <div class="img-ratio__inner">
-                      <picture
-                        ><source
-                          srcset="../img/1.jfif"
-                          type="image/webp" />
-                        <img
-                          src="../img/1.jfif"
-                          alt="Triphala (Unifarma) Добовка для пищеварения"
-                          title="Triphala (Unifarma) Добовка для пищеварения"
-                      /></picture>
-                    </div>
-                  </a>
-
-                  <div class="stickers">
-                    <div
-                      class="sticker sticker-sale"
-                      data-product-card-sale-value=""
-                      data-sticker-title="sticker-sale"
-                    ></div>
-                    <div
-                      class="sticker sticker-preorder"
-                      data-sticker-title="sticker-preorder"
-                    >
-                      Предзаказ
-                    </div>
-                  </div>
-                </div>
-              </div> -->
               <div class="product__area-photo">
                 <div class="product__gallery js-product-gallery">
                   <div style="display: none" class="js-product-all-images">
-                    <div
-                      class="splide__slide product__slide-main"
-                      data-product-img-id="529685436"
-                    >
-                      <a
-                        class="img-ratio img-fit product__photo"
-                        data-alt="Triphala (Unifarma) Добовка для пищеварения"
-                        data-fslightbox="product-photos-lightbox"
-                        data-type="image"
-                        href="../img/1.jfif"
-                      >
-                        <div class="img-ratio__inner">
-                          <picture>
-                            <source
-                              data-srcset="../img/1.jfif"
-                              type="image/webp"
-                              class="lazyload"
-                            />
-                            <img
-                              src="../img/" data-src="../img/1.jfif"
-                              class="lazyload"
-                              alt="Triphala (Unifarma) Добовка для пищеварения"
-                            />
-                          </picture>
-                        </div>
-                      </a>
-                    </div>
-                    <div
-                      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide"
-                      data-product-img-id="529685436"
-                    >
-                      <div
-                        class="img-ratio img-ratio_contain product__photo-tumb"
-                      >
-                        <div class="img-ratio__inner">
-                          <picture>
-                            <source
-                              data-srcset="../img/1.jfif"
-                              type="image/webp"
-                              class="lazyload"
-                            />
-                            <img
-                              src="../img/" data-src="../img/1.jfif"
-                              class="lazyload"
-                              alt="Triphala (Unifarma) Добовка для пищеварения"
-                            />
-                          </picture>
-                        </div>
-                      </div>
-                    </div>
+                    
+                  
 
                     <div
                       class="splide__slide product__slide-main"
@@ -627,29 +545,7 @@
                         </div>
                       </a>
                     </div>
-                    <div
-                      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide"
-                      data-product-img-id="529685437"
-                    >
-                      <div
-                        class="img-ratio img-ratio_contain product__photo-tumb"
-                      >
-                        <div class="img-ratio__inner">
-                          <picture>
-                            <source
-                              data-srcset="../img/1.jfif"
-                              type="image/webp"
-                              class="lazyload"
-                            />
-                            <img
-                              src="../img/" data-src="../img/1.jfif"
-                              class="lazyload"
-                              alt="Triphala (Unifarma) Добовка для пищеварения"
-                            />
-                          </picture>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
 
                   <div class="product__gallery-main">
@@ -1311,7 +1207,7 @@
                           <span
                             class="cut-block__controls-link _show button-link js-show-cut-block"
                           >
-                            Показать полностью
+                          Состав
                           </span>
                           <span
                             class="cut-block__controls-link _hide button-link js-hide-cut-block"
@@ -7346,7 +7242,7 @@
     .widget-type_system_widget_v4_header_11 .header__content {
       display: grid;
       grid-template-areas: "burger logo controls" "collections collections collections";
-      grid-template-columns: 1fr 300px 1fr;
+      grid-template-columns: 1fr 370px 1fr;
       grid-row-gap: var(--header-pt);
       align-items: center;
     }
@@ -8634,7 +8530,7 @@
     }
 
     .grid-list {
-      grid-template-columns: repeat(4, 200px);
+      grid-template-columns: repeat(5, 200px);
     }
 
     .special-products__title {
@@ -8647,7 +8543,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       const elems = document.querySelectorAll('.product-preview-elem');
 
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 5; i++) {
         let randomNumber = Math.floor(Math.random() * 16);
       
         elems[randomNumber].style.display = "block";
