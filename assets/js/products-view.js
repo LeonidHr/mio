@@ -425,7 +425,7 @@ function viewOtherProducts(postsData) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", removeSending);
+window.addEventListener("load", removeSending);
 
 window.addEventListener("load", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
