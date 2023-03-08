@@ -416,9 +416,9 @@ function viewOtherProducts(postsData) {
   });
 }
 
-window.addEventListener("load", removeSending);
+document.addEventListener("DOMContentLoaded", removeSending);
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
   
   productElems.forEach((elem, i) => {
