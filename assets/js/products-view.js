@@ -90,7 +90,7 @@ function viewFoodProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'food') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem _sending">
           <form
             action="/cart_items"
             method="post"
@@ -158,7 +158,7 @@ function viewSleepProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'sleep') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem _sending">
           <form
             action="/cart_items"
             method="post"
@@ -226,7 +226,7 @@ function viewThinkProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'think') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem _sending">
           <form
             action="/cart_items"
             method="post"
@@ -294,7 +294,7 @@ function viewImmunityProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'immunity') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem _sending">
           <form
             action="/cart_items"
             method="post"
@@ -363,7 +363,7 @@ function viewOtherProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'other') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem">
+        <div id="${el.id}" class="product-preview-elem _sending">
           <form
             action="/cart_items"
             method="post"

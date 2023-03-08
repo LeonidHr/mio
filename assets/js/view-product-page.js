@@ -630,7 +630,7 @@ function viewAnalogs(postsData) {
   for (let i = 0; i < 5; i++) {
 
     const postEl = `
-      <div id="${postsData[randomNumbers[i]].id}" class="product-preview-elem">
+      <div id="${postsData[randomNumbers[i]].id}" class="product-preview-elem _sending">
         <form
           action="/cart_items"
           method="post"
@@ -701,4 +701,22 @@ function generateRandomNumbers() {
     }
   }
   return numbers;
+}
+
+window.addEventListener("load", () => {
+  const productElems = document.querySelectorAll('.product-preview-elem');
+  
+  productElems.forEach((elem, i) => {
+    elem.addEventListener("click", e => {
+      addButtonClickToJson(e.target.closest('.product-preview-elem').getAttribute('id'));
+    });
+  })
+});
+
+function removeSending() {
+  const elems = document.querySelectorAll('.product-preview-elem');
+
+  elems.forEach(elem => {
+    elem.classList.remove('_sending');
+  });
 }
