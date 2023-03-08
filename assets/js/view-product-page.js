@@ -620,8 +620,6 @@ function addButtonClickToJson(buttonNumber) {
   localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
 }
 
-viewProducts();
-
 
 function viewAnalogs(postsData) {
   const analogsWrap = document.getElementById('analogs-wrap');
