@@ -425,6 +425,13 @@ async function viewProduct() {
         <h1 class="product__title heading">
         ${postsData[lastButtonClicksJson[0]].title}
         </h1>
+        <p class="product-preview__text">${postsData[lastButtonClicksJson[0]].text}</p>   
+        <div class="product-form__area-sku">
+        <div class="product__sku">
+          <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
+          <span>${postsData[lastButtonClicksJson[0]].articul}</span>
+        </div>
+      </div>
         <div class="product__area-description">
           <div class="product__full-description static-text">
             <div class="product__block-title">Состав</div>
@@ -473,13 +480,6 @@ async function viewProduct() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="product-form__area-sku">
-        <div class="product__sku">
-          <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
-          <span>${postsData[lastButtonClicksJson[0]].articul}</span>
         </div>
       </div>
 
