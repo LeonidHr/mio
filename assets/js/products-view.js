@@ -10,6 +10,20 @@ async function viewProducts() {
   let postsData = data.products;
 
   viewAllProducts(postsData);
+
+
+  // document.addEventListener("DOMContentLoaded", () => {
+  const productElems = document.querySelectorAll('.product-preview-elem');
+
+  productElems.forEach((elem, i) => {
+    elem.addEventListener("click", e => {
+      addButtonClickToJson(e.target.closest('.product-preview-elem').getAttribute('id'));
+    });
+  })
+  // });
+  
+
+
   viewFoodProducts(postsData);
   viewSleepProducts(postsData);
   viewThinkProducts(postsData);
@@ -23,7 +37,7 @@ function viewAllProducts(postsData) {
 
   postsData.forEach((el, i) => {
     const postEl = `
-      <div id="${el.id}" class="product-preview-elem _sending">
+      <div id="${el.id}" class="product-preview-elem ">
         <form
           action="/cart_items"
           method="post"
@@ -80,7 +94,7 @@ function viewFoodProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'food') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem _sending">
+        <div id="${el.id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -136,7 +150,7 @@ function viewSleepProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'sleep') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem _sending">
+        <div id="${el.id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -204,7 +218,7 @@ function viewThinkProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'think') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem _sending">
+        <div id="${el.id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -272,7 +286,7 @@ function viewImmunityProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'immunity') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem _sending">
+        <div id="${el.id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -341,7 +355,7 @@ function viewOtherProducts(postsData) {
   postsData.forEach((el, i) => {
     if (el.category === 'other') {
       const postEl = `
-        <div id="${el.id}" class="product-preview-elem _sending">
+        <div id="${el.id}" class="product-preview-elem ">
           <form
             action="/cart_items"
             method="post"
@@ -403,25 +417,15 @@ function viewOtherProducts(postsData) {
   });
 }
 
-window.addEventListener("load", removeSending);
+// window.addEventListener("load", removeSending);
 
-window.addEventListener("load", () => {
-  const productElems = document.querySelectorAll('.product-preview-elem');
-  
-  productElems.forEach((elem, i) => {
-    elem.addEventListener("click", e => {
-      addButtonClickToJson(e.target.closest('.product-preview-elem').getAttribute('id'));
-    });
-  })
-});
+// function removeSending() {
+//   const elems = document.querySelectorAll('.product-preview-elem');
 
-function removeSending() {
-  const elems = document.querySelectorAll('.product-preview-elem');
-
-  elems.forEach(elem => {
-    elem.classList.remove('_sending');
-  });
-}
+//   elems.forEach(elem => {
+//     elem.classList.remove('_sending');
+//   });
+// }
 
 function addButtonClickToJson(buttonNumber) {
   // Проверяем, есть ли уже объект в локальном хранилище
