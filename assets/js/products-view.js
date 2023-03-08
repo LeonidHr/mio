@@ -23,7 +23,7 @@ function viewAllProducts(postsData) {
 
   postsData.forEach((el, i) => {
     const postEl = `
-      <div id="${el.id}" class="product-preview-elem">
+      <div id="${el.id}" class="product-preview-elem _sending">
         <form
           action="/cart_items"
           method="post"
@@ -425,6 +425,8 @@ function viewOtherProducts(postsData) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", removeSending);
+
 window.addEventListener("load", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
   
@@ -434,6 +436,14 @@ window.addEventListener("load", () => {
     });
   })
 });
+
+function removeSending() {
+  const elems = document.querySelectorAll('.product-preview-elem');
+
+  elems.forEach(elem => {
+    elem.classList.remove('_sending');
+  });
+}
 
 function addButtonClickToJson(buttonNumber) {
   // Проверяем, есть ли уже объект в локальном хранилище
