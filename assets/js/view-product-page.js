@@ -421,13 +421,6 @@ async function viewProduct() {
       class="product__area-form product-form"
     >
 
-      <div class="product-form__area-sku">
-        <div class="product__sku">
-          <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
-          <span>${postsData[lastButtonClicksJson[0]].articul}</span>
-        </div>
-      </div>
-
       <div class="product-form__area-title">
         <h1 class="product__title heading">
         ${postsData[lastButtonClicksJson[0]].title}
@@ -483,7 +476,27 @@ async function viewProduct() {
         </div>
       </div>
 
+      <div class="product-form__area-sku">
+        <div class="product__sku">
+          <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
+          <span>${postsData[lastButtonClicksJson[0]].articul}</span>
+        </div>
+      </div>
 
+
+      <div class="product-form__area-price">
+      <div class="product__price">
+        <span class="product__price-cur" data-product-card-price-from-cart="">
+          ${postsData[lastButtonClicksJson[0]].price}
+          <span> €</span>
+        </span>
+        <span
+          class="product__price-old"
+          data-product-card-old-price=""
+        ></span>
+        за шт.
+      </div>
+    </div>
 
       <div class="product-form__area-variants-bundle">
         <input type="hidden" name="variant_id" value="579206704" />
@@ -566,19 +579,6 @@ async function viewProduct() {
         </div>
       </div>
 
-      <div class="product-form__area-price">
-        <div class="product__price">
-          <span class="product__price-cur" data-product-card-price-from-cart="">
-            ${postsData[lastButtonClicksJson[0]].price}
-            <span> €</span>
-          </span>
-          <span
-            class="product__price-old"
-            data-product-card-old-price=""
-          ></span>
-          за шт.
-        </div>
-      </div>
 
       <div class="product-form__area-short-description">
         <div class="product__short-description static-text"></div>
