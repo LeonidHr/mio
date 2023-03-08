@@ -23,7 +23,7 @@ async function viewProduct() {
   let postsData = data.products;
   const product = document.getElementById('product-wrap');
   const path = document.getElementById('page-path');
-
+  
   viewAnalogs(postsData);
 
   const pathContent = `
