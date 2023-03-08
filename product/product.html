@@ -437,7 +437,7 @@
             <div class="special-products js-special-products">
               <div class="special-products__head">
                 <div class="h2 special-products__title heading">
-                  Аналогичные товары
+                  Другие товары
                 </div>
               </div>
                 <div id="analogs-wrap" class="grid-list">
@@ -2144,6 +2144,10 @@
   <style>
     p {
       margin-bottom: 0 !important;
+    }
+
+    .splide__arrow {
+      display: none !important; 
     }
 
     .cut-block__controls-link {
@@ -9284,13 +9288,13 @@
             .removeClass("is-full")
             .find(".cut-block__content-wrapper")
             .css("height", max_height);
-          $("html, body").animate(
-            {
-              scrollTop: $(this).parents(".product__full-description").offset()
-                .top,
-            },
-            500
-          );
+          // $("html, body").animate(
+          //   {
+          //     scrollTop: $(this).parents(".product__full-description").offset()
+          //       .top,
+          //   },
+          //   500
+          // );
         });
 
         function configureCutBlockHeight(cutBlock) {

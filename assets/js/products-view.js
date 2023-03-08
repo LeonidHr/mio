@@ -50,7 +50,7 @@ function viewAllProducts(postsData) {
                 <div class="img-ratio img-fit">
                   <div class="img-ratio__inner">
                     <a
-                      href="product/product${i}.html"
+                      href="product/product.html"
                     >
                     
                       <picture>
@@ -69,7 +69,7 @@ function viewAllProducts(postsData) {
             </div>
             <div class="product-preview__area-title">
               <div class="product-preview__title">
-                <a href="product/product${i}.html">
+                <a href="product/product.html">
                   <p class="product-preview__label">${el.title}</p>
                   <p class="product-preview__text">${el.text}</p>      
                   <p class="product-preview__articul">${el.articul}</p>      
@@ -107,7 +107,7 @@ function viewFoodProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <img
@@ -124,7 +124,7 @@ function viewFoodProducts(postsData) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
@@ -163,7 +163,7 @@ function viewSleepProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -192,7 +192,7 @@ function viewSleepProducts(postsData) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
@@ -231,7 +231,7 @@ function viewThinkProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -260,7 +260,7 @@ function viewThinkProducts(postsData) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
@@ -299,7 +299,7 @@ function viewImmunityProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -328,7 +328,7 @@ function viewImmunityProducts(postsData) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
@@ -368,7 +368,7 @@ function viewOtherProducts(postsData) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product.html"
                       >
                         <picture>
                           <source
@@ -397,7 +397,7 @@ function viewOtherProducts(postsData) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
