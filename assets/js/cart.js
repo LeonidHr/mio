@@ -30,7 +30,7 @@ async function viewProductsCard() {
         <div id=${postsData[item.id].id} data-num="${i}" class="checkout__cart cart-checkout checkout-grid">
           <div class="cart-checkout__name">
             <button type="button" class="cart-checkout__exit">
-              <img src="./img/exit.jpg" alt="Выкитуть с корзины">
+              <img src="./img/exit.svg" alt="Выкитуть с корзины">
             </button>
             <div class="cart-checkout__img">
               <img src="${postsData[item.id].imgPath}" alt="${postsData[item.id].title}">

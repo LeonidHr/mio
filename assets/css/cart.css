@@ -56,6 +56,10 @@ button {
 
 .cart-checkout__exit {
   cursor: pointer;
+  background: transparent;
+}
+.cart-checkout__exit img {
+  width: 16px;
 }
 
 .cart-checkout__count,
@@ -99,6 +103,7 @@ button {
   justify-content: end;
   gap: 30px;
   font-size: 18px;
+  max-width: 94.6%;
 }
 
 .checkout__summa-num {
@@ -110,4 +115,5 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 94.6%;
 }
