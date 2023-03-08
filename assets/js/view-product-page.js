@@ -434,10 +434,10 @@ async function viewProduct() {
       </div>
         <div class="product__area-description">
           <div class="product__full-description static-text">
-            <div class="product__block-title">Состав</div>
-            <div class="cut-block js-cut-block" data-max-height="70">
+            <div class="cut-block js-cut-block" data-max-height="0">
               <div class="cut-block__content-wrapper">
                 <div class="cut-block__content">
+                  <div class="product__block-title">Состав</div>
                   <div class="product__description-content static-text">
                   
                    
@@ -467,15 +467,15 @@ async function viewProduct() {
                 </div>
               </div>
               <div class="cut-block__controls">
-                <span
-                  class="cut-block__controls-link _show button-link js-show-cut-block"
-                >
+                <span class="cut-block__controls-link _show button-link js-show-cut-block">
                 Состав
+                <img src="../img/arrow-down.svg" />
                 </span>
                 <span
                   class="cut-block__controls-link _hide button-link js-hide-cut-block"
                 >
                   Свернуть
+                  <img src="../img/arrow-down.svg" />
                 </span>
               </div>
             </div>

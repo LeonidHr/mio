@@ -38,24 +38,15 @@ function viewAllProducts(postsData) {
                     <a
                       href="product/product.html"
                     >
+                    
                       <picture>
-                        <source
-                          media="(min-width:768px)"
-                          data-srcset="${el.imgPath}"
-                          type="image/webp"
-                          class="lazyload"
-                        />
-                        <source
-                          media="(max-width:767px)"
-                          data-srcset="${el.imgPath}"
-                          type="image/webp"
-                          class="lazyload"
-                        />
                         <img
-                          data-src="${el.imgPath}" src="${el.imgPath}"
+                          data-src="${el.imgPath}"
+                          src="${el.imgPath}"
                           class="lazyload"
                           alt="${el.title}"
                         />
+                        
                       </picture>
                     </a>
                   </div>
