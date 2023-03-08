@@ -41,7 +41,6 @@ function viewAllProducts(postsData) {
                     
                       <picture>
                         <img
-                          data-src="${el.imgPath}"
                           src="${el.imgPath}"
                           class="lazyload"
                           alt="${el.title}"
@@ -97,20 +96,8 @@ function viewFoodProducts(postsData) {
                         href="product/product.html"
                       >
                         <picture>
-                          <source
-                            media="(min-width:768px)"
-                            data-srcset="${el.imgPath}"
-                            type="image/webp"
-                            class="lazyload"
-                          />
-                          <source
-                            media="(max-width:767px)"
-                            data-srcset="${el.imgPath}"
-                            type="image/webp"
-                            class="lazyload"
-                          />
                           <img
-                            data-src="${el.imgPath}" src="${el.imgPath}"
+                            src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -178,7 +165,7 @@ function viewSleepProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}" src="${el.imgPath}"
+                            src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -246,7 +233,7 @@ function viewThinkProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}" src="${el.imgPath}"
+                            src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -314,7 +301,7 @@ function viewImmunityProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}" src="${el.imgPath}"
+                            src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -383,7 +370,7 @@ function viewOtherProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}" src="${el.imgPath}"
+                            src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -416,9 +403,9 @@ function viewOtherProducts(postsData) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", removeSending);
+window.addEventListener("load", removeSending);
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
   
   productElems.forEach((elem, i) => {
