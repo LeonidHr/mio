@@ -453,7 +453,7 @@ function addButtonClickToJson(buttonNumber) {
     buttonClicks = JSON.parse(json);
   }
 
-  localStorage.clear();
+
   buttonClicks = [];
   // Добавляем новое значение
   buttonClicks.unshift(buttonNumber);

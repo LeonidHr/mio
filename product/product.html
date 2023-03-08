@@ -49,7 +49,7 @@
           ic.async = true;
           ic.src = "/javascripts/insales_counter.js?6";
           var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(ic, s);
+          // s.parentNode.insertBefore(ic, s);
         })();
       }
     </script>
@@ -7666,15 +7666,17 @@
 
 
   <script>
-    const btns = document.querySelectorAll('.product-form__counters-btns button');
-    const addCartBtn = document.querySelector('.add-cart-counter');
-    const addCartBtnCount =  addCartBtn.querySelector('[data-add-cart-counter-count]');
+    document.addEventListener("DOMContentLoaded", () => {
+      const btns = document.querySelectorAll('.product-form__counters-btns button');
+      const addCartBtn = document.querySelector('.add-cart-counter');
+      const addCartBtnCount =  addCartBtn.querySelector('[data-add-cart-counter-count]');
 
 
-    btns.forEach(btn => {
-      btn.addEventListener("click", e => {
-        addCartBtn.classList.add('is-add-cart');
-        addCartBtnCount.innerHTML = btn.dataset.num;
+      btns.forEach(btn => {
+        btn.addEventListener("click", e => {
+          addCartBtn.classList.add('is-add-cart');
+          addCartBtnCount.innerHTML = btn.dataset.num;
+        });
       });
     });
 

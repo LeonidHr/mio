@@ -87,6 +87,9 @@
         }
       }
     </style>
+
+    <script src="./assets/js/cart.js"></script>
+
   </head>
   <body data-multi-lang="false">
     <noscript>
@@ -365,7 +368,7 @@
           <div class="layout__content">
             <div class="cart-null">
               <h1 class="heading">Корзина</h1>
-              <!-- <div class="text-center js-cart-empty">Ваша корзина пуста</div> -->
+              <div class="text-center js-cart-empty">Ваша корзина пуста</div>
             </div>
             <div id="checkout" class="checkout">
               <div class="checkout__info checkout-grid">
@@ -374,30 +377,12 @@
                 <div class="checkout__info-item">Цена</div>
               </div>
               <div id="cards-wrap" class="checkout__cards">
-                <div class="checkout__cart cart-checkout checkout-grid">
-                  <div class="cart-checkout__name">
-                    <div class="cart-checkout__exit">
-                      <img src="./img/exit.jpg" alt="Выкитуть с корзины">
-                    </div>
-                    <div class="cart-checkout__img">
-                      <img src="img/1.jfif" alt="">
-                    </div>
-                    <div class="cart-checkout__content">
-                      <div class="cart-checkout__title cart-checkout__text">Triphala (Unifarma)</div>
-                      <div class="cart-checkout__articul">
-                        <div>Артикул</div> 
-                        <span>No. 001</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cart-checkout__count cart-checkout__text"><span>5</span> шт</div>
-                  <div class="cart-checkout__price cart-checkout__text"><span>780</span> руб</div>
-                </div>
+                
                 
               </div>
               <div class="checkout__summa">
                 <div>Итого к оплате:</div>
-                <div class="checkout__summa-num"><span>1500</span> руб</div>
+                <div class="checkout__summa-num"><span id="cart-summ">0</span> €</div>
               </div>
               <div class="checkout__btns">
                 <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>

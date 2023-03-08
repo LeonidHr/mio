@@ -1,3 +1,11 @@
+button {
+  border: none;
+}
+
+.js-cart-empty {
+  display: none;
+}
+
 .checkout-grid {
   display: grid;
   grid-template-columns: 70% 1fr 1fr;
@@ -64,6 +72,9 @@
 
 .cart-checkout__img {
   max-height: 170px;
+  flex: 0 0 130px;
+  display: flex;
+  justify-content: center;
 }
 
 .cart-checkout__img img {

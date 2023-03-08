@@ -50,7 +50,7 @@ async function viewProduct() {
 
 
   const postEl = `
-    <div data-gallery-type="all-photos" class="product is-zero-count-preorder">
+    <div id="${postsData[lastButtonClicksJson[0]].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
     <div class="product__area-photo">
       <div class="product__gallery js-product-gallery">
         <div style="display: none" class="js-product-all-images">
@@ -570,6 +570,7 @@ async function viewProduct() {
         <div class="product__price">
           <span class="product__price-cur" data-product-card-price-from-cart="">
             ${postsData[lastButtonClicksJson[0]].price}
+            <span> €</span>
           </span>
           <span
             class="product__price-old"
@@ -602,23 +603,6 @@ async function viewProduct() {
 }
 
 viewProduct();
-
-function addButtonClickToJson(buttonNumber) {
-  // Проверяем, есть ли уже объект в локальном хранилище
-  let json = localStorage.getItem('buttonClicks');
-  let buttonClicks = [];
-  if (json) {
-    buttonClicks = JSON.parse(json);
-  }
-
-  localStorage.clear();
-  buttonClicks = [];
-  // Добавляем новое значение
-  buttonClicks.unshift(buttonNumber);
-
-  // Сохраняем обновленный объект в локальном хранилище
-  localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
-}
 
 
 function viewAnalogs(postsData) {
@@ -703,13 +687,74 @@ function generateRandomNumbers() {
 
 window.addEventListener("load", () => {
   const productElems = document.querySelectorAll('.product-preview-elem');
-  
+  const countBtns = document.querySelectorAll('.product-form__counters-btns button');
+
+  countBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      addProductToCart(e.target.closest('[data-product]').getAttribute('id'), e.target.dataset.num);
+    });
+  });
+
   productElems.forEach((elem, i) => {
     elem.addEventListener("click", e => {
       addButtonClickToJson(e.target.closest('.product-preview-elem').getAttribute('id'));
     });
   })
 });
+
+function removeDuplicates(array) {
+  const uniqueObjects = {};
+  const uniqueArray = [];
+
+  for (let i = array.length - 1; i >= 0; i--) {
+    const currentObject = array[i];
+    if (!uniqueObjects[currentObject.id]) {
+      uniqueObjects[currentObject.id] = true;
+      uniqueArray.push(currentObject);
+    }
+  }
+
+  return uniqueArray;
+}
+
+function addProductToCart(prodNum, prodCount) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = localStorage.getItem('prodToCart');
+  let prodToCart = [];
+  if (json) {
+    prodToCart = JSON.parse(json);
+  }
+
+  let product = {
+    id: prodNum,
+    count: prodCount
+  }
+
+  // Добавляем новое значение
+  prodToCart.push(product);
+
+  const uniqueArray = removeDuplicates(prodToCart);
+
+  // Сохраняем обновленный объект в локальном хранилище
+  localStorage.setItem('prodToCart', JSON.stringify(uniqueArray));
+}
+
+function addButtonClickToJson(buttonNumber) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = localStorage.getItem('buttonClicks');
+  let buttonClicks = [];
+  if (json) {
+    buttonClicks = JSON.parse(json);
+  }
+
+  buttonClicks = [];
+  // Добавляем новое значение
+  buttonClicks.unshift(buttonNumber);
+
+  // Сохраняем обновленный объект в локальном хранилище
+  localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
+}
+
 
 function removeSending() {
   const elems = document.querySelectorAll('.product-preview-elem');
