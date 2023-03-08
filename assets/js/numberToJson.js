@@ -16,9 +16,10 @@ function addButtonClickToJson(buttonNumber) {
     buttonClicks = JSON.parse(json);
   }
 
+  localStorage.clear();
   buttonClicks = [];
   // Добавляем новое значение
-  buttonClicks.push(buttonNumber);
+  buttonClicks.unshift(buttonNumber);
 
   // Сохраняем обновленный объект в локальном хранилище
   localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));

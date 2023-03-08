@@ -11,7 +11,7 @@ function getLastButtonClicksJson() {
 }
 
 let lastButtonClicksJson = getLastButtonClicksJson();
-// console.log(lastButtonClicksJson[0]);
+console.log(lastButtonClicksJson);
 
 const getData = async (url) => {
   const response = await fetch(url);
@@ -602,6 +602,26 @@ async function viewProduct() {
 }
 
 viewProduct();
+
+function addButtonClickToJson(buttonNumber) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = localStorage.getItem('buttonClicks');
+  let buttonClicks = [];
+  if (json) {
+    buttonClicks = JSON.parse(json);
+  }
+
+  localStorage.clear();
+  buttonClicks = [];
+  // Добавляем новое значение
+  buttonClicks.unshift(buttonNumber);
+
+  // Сохраняем обновленный объект в локальном хранилище
+  localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
+}
+
+viewProducts();
+
 
 function viewAnalogs(postsData) {
   const analogsWrap = document.getElementById('analogs-wrap');

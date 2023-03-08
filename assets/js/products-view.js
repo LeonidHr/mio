@@ -1,4 +1,5 @@
 
+
 const getData = async (url) => {
   const response = await fetch(url);
   return await response.json();
@@ -51,7 +52,7 @@ function viewAllProducts(postsData) {
                           class="lazyload"
                         />
                         <img
-                          data-src="${el.imgPath}"
+                          data-src="${el.imgPath}" src="${el.imgPath}"
                           class="lazyload"
                           alt="${el.title}"
                         />
@@ -118,7 +119,7 @@ function viewFoodProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}"
+                            data-src="${el.imgPath}" src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -186,7 +187,7 @@ function viewSleepProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}"
+                            data-src="${el.imgPath}" src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -254,7 +255,7 @@ function viewThinkProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}"
+                            data-src="${el.imgPath}" src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -322,7 +323,7 @@ function viewImmunityProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}"
+                            data-src="${el.imgPath}" src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -391,7 +392,7 @@ function viewOtherProducts(postsData) {
                             class="lazyload"
                           />
                           <img
-                            data-src="${el.imgPath}"
+                            data-src="${el.imgPath}" src="${el.imgPath}"
                             class="lazyload"
                             alt="${el.title}"
                           />
@@ -422,6 +423,33 @@ function viewOtherProducts(postsData) {
       badsWrap.insertAdjacentHTML("beforeend", postEl);
     }
   });
+}
+
+window.addEventListener("load", () => {
+  const productElems = document.querySelectorAll('.product-preview-elem');
+  
+  productElems.forEach((elem, i) => {
+    elem.addEventListener("click", e => {
+      addButtonClickToJson(e.target.closest('.product-preview-elem').getAttribute('id'));
+    });
+  })
+});
+
+function addButtonClickToJson(buttonNumber) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = localStorage.getItem('buttonClicks');
+  let buttonClicks = [];
+  if (json) {
+    buttonClicks = JSON.parse(json);
+  }
+
+  localStorage.clear();
+  buttonClicks = [];
+  // Добавляем новое значение
+  buttonClicks.unshift(buttonNumber);
+
+  // Сохраняем обновленный объект в локальном хранилище
+  localStorage.setItem('buttonClicks', JSON.stringify(buttonClicks));
 }
 
 viewProducts();

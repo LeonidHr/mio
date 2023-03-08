@@ -6,7 +6,7 @@
       "articul": "No. 001",
       "title": "Triphala (Unifarma)",
       "text": "Добовка для пищеварения",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "food",
       "descr": [
@@ -19,7 +19,7 @@
       "articul": "No. 002",
       "title": "Ashvaganda (Himalaya)",
       "text": "Добовка для спокойствия",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "calmness",
       "descr": [
@@ -32,7 +32,7 @@
       "articul": "No. 003",
       "title": "Расторопша+Артишок (Биокор)",
       "text": "Добавка для печени",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "food",
       "descr": [
@@ -53,7 +53,7 @@
       "articul": "No. 004",
       "title": "5-HTP (Swanson)",
       "text": "Добавка для работы мозга",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "think",
       "descr": [
@@ -71,7 +71,7 @@
       "articul": "No. 005",
       "title": "Super Enzymes (NOW)",
       "text": "Добовка для пищеварения",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "food",
       "descr": [
@@ -87,7 +87,7 @@
       "articul": "No. 006",
       "title": "L-Carnitine (Ostrovit)",
       "text": "Добовка для выносливости",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "endurance",
       "descr": [
@@ -103,7 +103,7 @@
       "articul": "No. 007",
       "title": "L-theanine (Ostrovit)",
       "text": "Добовка для работы мозга",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "think",
       "descr": [
@@ -118,7 +118,7 @@
       "articul": "No. 008",
       "title": "Brahmi (Bacopa) Himalaya",
       "text": "Добовка для работы мозга",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "think",
       "descr": [
@@ -131,7 +131,7 @@
       "articul": "No. 009",
       "title": "LIV-52 (Himalaya) ",
       "text": "Добовка для печени",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "food",
       "descr": [
@@ -151,7 +151,7 @@
       "articul": "No. 010",
       "title": "Калия Йодид (Витамир)",
       "text": "Йод",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "immunity",
       "descr": [
@@ -167,7 +167,7 @@
       "articul": "No. 011",
       "title": "Healthy Skin (Ostrovit)",
       "text": "Добовка для кожи",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "other",
       "descr": [
@@ -191,7 +191,7 @@
       "articul": "No. 012",
       "title": "NeuroOffice (BioChronoss+)",
       "text": "Добовка для продуктивности",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "other",
       "descr": [
@@ -215,7 +215,7 @@
       "articul": "No. 013",
       "title": "Immuno Shots (Acorus Balance)",
       "text": "Добовка для иммунитета",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "immunity",
       "descr": [
@@ -241,7 +241,7 @@
       "articul": "No. 014",
       "title": "Travelan (Olimp Labs)",
       "text": "Добовка для укачивания",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "other",
       "descr": [
@@ -264,7 +264,7 @@
       "articul": "No. 015",
       "title": "Мелатонин (Эвалар)",
       "text": "Добовка для сна",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "sleep",
       "descr": [
@@ -282,7 +282,7 @@
       "articul": "No. 016",
       "title": "Chyawanprash (Dabur)",
       "text": "Добовка для иммунитета",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
       "category": "immunity",
       "descr": [
@@ -314,9 +314,12 @@
       "articul": "No. 017",
       "title": "Эликсир Иммунитет (Vital Elixir)",
       "text": "Добовка для иммунитета",
-      "price": "780 руб",
+      "price": "780 €",
       "mainCategory": "Бады",
-      "category": "immunity"
+      "category": "immunity",
+      "descr": [
+        ""        
+      ]
     }
   ]
 }
