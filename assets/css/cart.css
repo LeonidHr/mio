@@ -138,6 +138,24 @@ button {
   padding: 50px;
 }
 
+@media (max-width: 480px){
+  .checkout__form-content {
+    border: 1px solid #25a033;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px){
+  .checkout__form-content {
+    transform: translateX(4vw);
+  }
+}
+@media (max-width: 360px){
+  .checkout__form-content {
+    transform: translateX(6vw);
+  }
+}
+
 textarea {
   resize: none;
 }
@@ -151,14 +169,27 @@ textarea {
   display: flex;
   align-items: center;
   column-gap: 25px;
-  margin-bottom: 20px;
+}
+
+@media (max-width: 560px){
+  .checkout__form-row {
+    flex-direction: column;
+  }
 }
 
 .form-popup__item {
   display: flex;
   flex-direction: column;
   flex: 0 0 calc(50% - 25px);
+  position: relative;
+  margin-bottom: 30px;
 }
+@media (max-width: 560px){
+  .form-popup__item {
+    width: 100%;
+  }
+}
+
 
 .form-popup__item input {
   border: 1px solid #25a033;
@@ -178,6 +209,7 @@ textarea {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .form-popup__item input,
 .form-popup__item select {
@@ -188,4 +220,18 @@ textarea {
 .form-popup__item select:focus,
 .form-popup__item textarea:focus {
   outline: 1px solid #1dca31;
+}
+
+.form__error {
+  color: red;
+  margin-top: 9px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+
+@media (max-width:560px){
+  .form-popup__btn {
+    width: 100%;
+  }
 }

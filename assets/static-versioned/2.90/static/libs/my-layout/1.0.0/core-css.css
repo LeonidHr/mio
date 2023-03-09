@@ -6,3 +6,7 @@
 .product-preview__text {
   margin-bottom: 10px !important;
 }
+
+.widget-type_system_widget_v4_header_11 .header__content {
+  grid-template-columns: 1fr 250px 1fr !important;
+}

@@ -87,3 +87,15 @@ function removeProduct(e, prodId) {
   localStorage.setItem('prodToCart', JSON.stringify(prodId));
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('design-btn').addEventListener("click", smoothScrollBy300px);
+});
+
+function smoothScrollBy300px() {
+  window.scrollBy({
+    top: 500,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
