@@ -1,17 +1,17 @@
-function getLastButtonClicksJson() {
-  let json = localStorage.getItem('buttonClicks');
-  if (json) {
-    // Если в локальном хранилище есть JSON объект, возвращаем его
-    let buttonClicks = JSON.parse(json);
-    return buttonClicks;
-  } else {
-    // Если объекта в локальном хранилище нет, возвращаем пустой JSON объект
-    return '{}';
-  }
-}
+// function getLastButtonClicksJson() {
+//   let json = localStorage.getItem('buttonClicks');
+//   if (json) {
+//     // Если в локальном хранилище есть JSON объект, возвращаем его
+//     let buttonClicks = JSON.parse(json);
+//     return buttonClicks;
+//   } else {
+//     // Если объекта в локальном хранилище нет, возвращаем пустой JSON объект
+//     return '{}';
+//   }
+// }
 
-let lastButtonClicksJson = getLastButtonClicksJson();
-console.log(lastButtonClicksJson);
+// let lastButtonClicksJson = getLastButtonClicksJson();
+// console.log(lastButtonClicksJson);
 
 const getData = async (url) => {
   const response = await fetch(url);
@@ -23,7 +23,8 @@ async function viewProduct() {
   let postsData = data.products;
   const product = document.getElementById('product-wrap');
   const path = document.getElementById('page-path');
-  
+  const documetnId = document.documentElement.getAttribute('id');
+
   viewAnalogs(postsData);
 
   const pathContent = `
@@ -35,12 +36,12 @@ async function viewProduct() {
         </li>
 
         <li class="breadcrumb-item" data-breadcrumbs="2">
-          <a class="breadcrumb-link">${postsData[lastButtonClicksJson[0]].mainCategory}</a
+          <a class="breadcrumb-link">${postsData[documetnId].mainCategory}</a
           >
         </li>
 
         <li class="breadcrumb-item" data-breadcrumbs="2">
-          <a class="breadcrumb-link">${postsData[lastButtonClicksJson[0]].title}</a>
+          <a class="breadcrumb-link">${postsData[documetnId].title}</a>
         </li>
       </ul>
     </div>
@@ -50,7 +51,7 @@ async function viewProduct() {
 
 
   const postEl = `
-    <div id="${postsData[lastButtonClicksJson[0]].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
+    <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
     <div class="product__area-photo">
       <div class="product__gallery js-product-gallery">
         <div style="display: none" class="js-product-all-images">
@@ -60,22 +61,22 @@ async function viewProduct() {
           <div class="splide__slide product__slide-main" data-product-img-id="529685434">
             <a
               class="img-ratio img-fit product__photo"
-              data-alt="${postsData[lastButtonClicksJson[0]].title}"
+              data-alt="${postsData[documetnId].title}"
               data-fslightbox="product-photos-lightbox"
               data-type="image"
-              href="../${postsData[lastButtonClicksJson[0]].imgPath}"
+              href="../${postsData[documetnId].imgPath}"
             >
               <div class="img-ratio__inner">
                 <picture>
                   <source
-                    data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    data-srcset="../${postsData[documetnId].imgPath}"
                     type="image/webp"
                     class="lazyload"
                   />
                   <img
-                    src="../${postsData[lastButtonClicksJson[0]].imgPath}" data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    src="../${postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath}"
                     class="lazyload"
-                    alt="${postsData[lastButtonClicksJson[0]].title}"
+                    alt="${postsData[documetnId].title}"
                   />
                 </picture>
               </div>
@@ -91,12 +92,12 @@ async function viewProduct() {
               <div class="img-ratio__inner">
                 <picture>
                   <source
-                    data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    data-srcset="../${postsData[documetnId].imgPath}"
                     type="image/webp"
                     class="lazyload"
                   />
                   <img
-                    src="../${postsData[lastButtonClicksJson[0]].imgPath}" data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    src="../${postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath}"
                     class="lazyload"
                     alt="Triphala (Unifarma) Добовка для пищеварения"
                   />
@@ -114,17 +115,17 @@ async function viewProduct() {
               data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
               data-fslightbox="product-photos-lightbox"
               data-type="image"
-              href="../${postsData[lastButtonClicksJson[0]].imgPath}"
+              href="../${postsData[documetnId].imgPath}"
             >
               <div class="img-ratio__inner">
                 <picture>
                   <source
-                    data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    data-srcset="../${postsData[documetnId].imgPath}"
                     type="image/webp"
                     class="lazyload"
                   />
                   <img
-                    src="../img/" data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    src="../img/" data-src="../${postsData[documetnId].imgPath}"
                     class="lazyload"
                     alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                   />
@@ -166,23 +167,23 @@ async function viewProduct() {
                     data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                     data-fslightbox="product-photos-lightbox-423834350"
                     data-type="image"
-                    href="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    href="../${postsData[documetnId].imgPath}"
                   >
                     <div class="img-ratio__inner">
                       <picture>
                         <source
-                          data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-srcset="../${postsData[documetnId].imgPath}"
                           type="image/webp"
                           class="lazyload entered"
                           data-ll-status="entered"
-                          srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          srcset="../${postsData[documetnId].imgPath}"
                         />
                         <img
-                          data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-src="../${postsData[documetnId].imgPath}"
                           class="lazyload entered loaded"
                           alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                           data-ll-status="loaded"
-                          src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          src="../${postsData[documetnId].imgPath}"
                         />
                       </picture>
                     </div>
@@ -204,24 +205,24 @@ async function viewProduct() {
                     data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                     data-fslightbox="product-photos-lightbox-423834350"
                     data-type="image"
-                    href="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    href="../${postsData[documetnId].imgPath}"
                     tabindex="-1"
                   >
                     <div class="img-ratio__inner">
                       <picture>
                         <source
-                          data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-srcset="../${postsData[documetnId].imgPath}"
                           type="image/webp"
                           class="lazyload entered exited"
                           data-ll-status="entered"
-                          srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          srcset="../${postsData[documetnId].imgPath}"
                         />
                         <img
-                          data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-src="../${postsData[documetnId].imgPath}"
                           class="lazyload entered loaded"
                           alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                           data-ll-status="loaded"
-                          src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          src="../${postsData[documetnId].imgPath}"
                         />
                       </picture>
                     </div>
@@ -243,24 +244,24 @@ async function viewProduct() {
                     data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                     data-fslightbox="product-photos-lightbox-423834350"
                     data-type="image"
-                    href="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                    href="../${postsData[documetnId].imgPath}"
                     tabindex="-1"
                   >
                     <div class="img-ratio__inner">
                       <picture>
                         <source
-                          data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-srcset="../${postsData[documetnId].imgPath}"
                           type="image/webp"
                           class="lazyload entered exited"
                           data-ll-status="entered"
-                          srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          srcset="../${postsData[documetnId].imgPath}"
                         />
                         <img
-                          src="../img/" data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          src="../img/" data-src="../${postsData[documetnId].imgPath}"
                           class="lazyload entered loaded"
                           alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                           data-ll-status="loaded"
-                          src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          src="../${postsData[documetnId].imgPath}"
                         />
                       </picture>
                     </div>
@@ -366,18 +367,18 @@ async function viewProduct() {
                     <div class="img-ratio__inner">
                       <picture>
                         <source
-                          data-srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-srcset="../${postsData[documetnId].imgPath}"
                           type="image/webp"
                           class="lazyload entered"
                           data-ll-status="entered"
-                          srcset="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          srcset="../${postsData[documetnId].imgPath}"
                         />
                         <img
-                          data-src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          data-src="../${postsData[documetnId].imgPath}"
                           class="lazyload entered loaded"
-                          alt="${postsData[lastButtonClicksJson[0]].title}"
+                          alt="${postsData[documetnId].title}"
                           data-ll-status="loaded"
-                          src="../${postsData[lastButtonClicksJson[0]].imgPath}"
+                          src="../${postsData[documetnId].imgPath}"
                         />
                       </picture>
                     </div>
@@ -423,13 +424,13 @@ async function viewProduct() {
 
       <div class="product-form__area-title">
         <h1 class="product__title heading">
-        ${postsData[lastButtonClicksJson[0]].title}
+        ${postsData[documetnId].title}
         </h1>
-        <p class="product-preview__text">${postsData[lastButtonClicksJson[0]].text}</p>   
+        <p class="product-preview__text">${postsData[documetnId].text}</p>   
         <div class="product-form__area-sku">
         <div class="product__sku">
           <!-- data-product-card-sku='{"skuLabel": "арт. "}' -->
-          <span>${postsData[lastButtonClicksJson[0]].articul}</span>
+          <span>${postsData[documetnId].articul}</span>
         </div>
       </div>
         <div class="product__area-description">
@@ -487,7 +488,7 @@ async function viewProduct() {
       <div class="product-form__area-price">
       <div class="product__price">
         <span class="product__price-cur" data-product-card-price-from-cart="">
-          ${postsData[lastButtonClicksJson[0]].price}
+          ${postsData[documetnId].price}
           <span> €</span>
         </span>
         <span
@@ -592,10 +593,10 @@ async function viewProduct() {
 
   const descr = document.querySelector('.product__description-content');
   
-  postsData[lastButtonClicksJson[0]].descr.forEach((text, i) => {
+  postsData[documetnId].descr.forEach((text, i) => {
     descr.insertAdjacentHTML("beforeend", `
       <p>
-        ${postsData[lastButtonClicksJson[0]].descr[i]}  
+        ${postsData[documetnId].descr[i]}  
       </p>
     `);
   });
@@ -616,7 +617,6 @@ function viewAnalogs(postsData) {
         <form
           action="/cart_items"
           method="post"
-          data-product-id="248406913"
           class="product-preview is-zero-count-preorder"
         >
           <div class="product-preview__content">
@@ -625,7 +625,7 @@ function viewAnalogs(postsData) {
                 <div class="img-ratio img-fit">
                   <div class="img-ratio__inner">
                     <a
-                      href="product.html"
+                      href="product${i}.html"
                     >
                       <picture>
                         <source
@@ -655,7 +655,7 @@ function viewAnalogs(postsData) {
             </div>
             <div class="product-preview__area-title">
               <div class="product-preview__title">
-                <a href="product.html">
+                <a href="product${i}.html">
                   <p class="product-preview__label">${postsData[randomNumbers[i]].title}</p>
                   <p class="product-preview__text">${postsData[randomNumbers[i]].text}</p>      
                   <p class="product-preview__articul">${postsData[randomNumbers[i]].articul}</p>      
