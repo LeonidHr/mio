@@ -49,6 +49,7 @@ async function viewProduct() {
 
   path.insertAdjacentHTML("beforeend", pathContent);
 
+  document.title = postsData[documetnId].title;
 
   const postEl = `
     <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">

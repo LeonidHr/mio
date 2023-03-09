@@ -32,7 +32,7 @@ async function viewProducts(categoryMain) {
                       <div class="img-ratio img-fit">
                         <div class="img-ratio__inner">
                           <a
-                            href="product/product${i}.html"
+                            href="product/product${el.id}.html"
                           >
                             <picture>
                               <source
@@ -61,7 +61,7 @@ async function viewProducts(categoryMain) {
                   </div>
                   <div class="product-preview__area-title">
                     <div class="product-preview__title">
-                      <a href="product/product${i}.html">
+                      <a href="product/product${el.id}.html">
                         <p class="product-preview__label">${el.title}</p>
                         <p class="product-preview__text">${el.text}</p>      
                         <p class="product-preview__articul">${el.articul}</p>      
@@ -129,7 +129,7 @@ function viewAllProducts(postsData, badsWrap, category) {
                   <div class="img-ratio img-fit">
                     <div class="img-ratio__inner">
                       <a
-                        href="product/product${i}.html"
+                        href="product/product${el.id}.html"
                       >
                       
                         <picture>
@@ -148,7 +148,7 @@ function viewAllProducts(postsData, badsWrap, category) {
               </div>
               <div class="product-preview__area-title">
                 <div class="product-preview__title">
-                  <a href="product/product${i}.html">
+                  <a href="product/product${el.id}.html">
                     <p class="product-preview__label">${el.title}</p>
                     <p class="product-preview__text">${el.text}</p>      
                     <p class="product-preview__articul">${el.articul}</p>      
