@@ -370,14 +370,13 @@
               <h1 class="heading">Корзина</h1>
               <div class="text-center js-cart-empty">Ваша корзина пуста</div>
             </div>
-            <div id="checkout" class="checkout">
+            <form data-dev id="checkout" class="checkout" action="files/sendmail/sendmail.php" method="POST">
               <div class="checkout__info checkout-grid">
                 <div class="checkout__info-item">Название</div>
                 <div class="checkout__info-item">Количество</div>
                 <div class="checkout__info-item">Цена</div>
               </div>
               <div id="cards-wrap" class="checkout__cards">
-                
                 
               </div>
               <div class="checkout__summa">
@@ -388,7 +387,38 @@
                 <a href="index.htm" class="checkout__btn button button_no-bg">Продолжить покупки</a>
                 <button type="button" class="checkout__btn button">Оформить заказ</button>
               </div>
-            </div>
+              <div class="checkout__form">
+                <h2 class="heading checkout__heading">Оформление</h2>
+                <div class="checkout__form-content">
+                  <div class="checkout__form-row">
+                    <div class="form-popup__item">
+                      <label for="email" class="checkout__label">Ваш E-mail</label>
+                      <input type="text" id="email" name="email" data-required="phonemail" data-error="Введите Tel./Email" placeholder="Email" class="form__input">
+                    </div>
+                    <div class="form-popup__item">
+                      <label for="email" class="checkout__label">Доставка </label>
+                      <select name="form[]" data-class-modif="form">
+                        <option value selected>Выбрать</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Omniva">Доставка Omniva</option>
+                        <option value="Почта">Доставка почтой</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-popup__item">
+                    <label for="message" class="checkout__label">Коментарий к заказу</label>
+                    <textarea name="message" id="message" data-error="Коментарий к заказу" placeholder="Коментарий к заказу" class="form__input form__input_textarea"></textarea>
+                  </div>
+                  <div class="checkout__form-row">
+                    <div class="checkbox form-popup__checkbox">
+                      <div id="capcha1" data-required="capcha" data-sitekey="6LcV7cgkAAAAAC8wrAV3nwv6rFNrmfsjq8LG8oJx" data-error="Пройдите reCAPCHA" class="g-recaptcha"></div>
+                    </div>
+                    <button class="form-popup__btn button" type="submit">Заказать</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            
           </div>
         </div>
       </main>
@@ -959,6 +989,7 @@
         </div>
       </div>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {

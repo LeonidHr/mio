@@ -116,4 +116,76 @@ button {
   align-items: center;
   justify-content: space-between;
   max-width: 94.6%;
+  margin-bottom: 80px;
+}
+
+
+/* ================================================================ */
+
+.checkout__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout__heading {
+  display: block;
+  margin-bottom: 25px !important;
+}
+.checkout__form-content {
+  border: 1px solid #25a033;
+  padding: 50px;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkout__label {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.checkout__form-row {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  margin-bottom: 20px;
+}
+
+.form-popup__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 25px);
+}
+
+.form-popup__item input {
+  border: 1px solid #25a033;
+  padding: 10px 20px;
+}
+
+.form-popup__item textarea {
+  border: 1px solid #25a033;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  min-height: 90px;
+}
+
+.form-popup__item select {
+  border: 1px solid #25a033;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form-popup__item input,
+.form-popup__item select {
+  border-radius: 5px;
+}
+
+.form-popup__item input:focus,
+.form-popup__item select:focus,
+.form-popup__item textarea:focus {
+  outline: 1px solid #1dca31;
 }
