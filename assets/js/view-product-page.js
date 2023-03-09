@@ -625,7 +625,7 @@ function viewAnalogs(postsData) {
                 <div class="img-ratio img-fit">
                   <div class="img-ratio__inner">
                     <a
-                      href="product${i}.html"
+                      href="product${postsData[randomNumbers[i]].id}.html"
                     >
                       <picture>
                         <source
@@ -655,7 +655,7 @@ function viewAnalogs(postsData) {
             </div>
             <div class="product-preview__area-title">
               <div class="product-preview__title">
-                <a href="product${i}.html">
+                <a href="product${postsData[randomNumbers[i]].id}.html">
                   <p class="product-preview__label">${postsData[randomNumbers[i]].title}</p>
                   <p class="product-preview__text">${postsData[randomNumbers[i]].text}</p>      
                   <p class="product-preview__articul">${postsData[randomNumbers[i]].articul}</p>      
