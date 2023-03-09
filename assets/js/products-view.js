@@ -94,8 +94,9 @@ function addClassToFirst() {
   document.querySelectorAll('.tabs__head-item').forEach(item => {
     item.classList.remove('is-active');
   });
+  const itemAll = document.querySelector('#all'); 
 
-  document.querySelector('#all').classList.add('is-active');
+  itemAll.querySelector('.tabs__head-item').classList.add('is-active');
 }
 
 function toggleClass(elClass, activeClass, e) {
