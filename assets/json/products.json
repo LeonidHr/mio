@@ -132,7 +132,7 @@
       "title": "LIV-52 (Himalaya) ",
       "text": "Добавка для печени",
       "price": "780 ",
-      "mainCategory": "Бады",
+      "mainCategory": "Витамины и минералы",
       "category": "food",
       "descr": [
         "Корни травянистых каперцев (Capparis spinosa) – 65 мг",
@@ -146,25 +146,9 @@
       ]
     },
     {
-      "id": 9,
-      "imgPath": "img/10.png",
-      "articul": "No. 010",
-      "title": "Калия Йодид (Витамир)",
-      "text": "Йод",
-      "price": "780 ",
-      "mainCategory": "Бады",
-      "category": "immunity",
-      "descr": [
-        "Калия йодид 200мкг",
-        "Микрокристаллическая целлюлоза (носитель)",
-        "Лактоза",
-        "Магния стеарат (агент антислеживающий)"
-      ]
-    },
-    {
       "id": 10,
       "imgPath": "img/11.png",
-      "articul": "No. 011",
+      "articul": "No. 010",
       "title": "Healthy Skin (Ostrovit)",
       "text": "Добавка для кожи",
       "price": "780 ",
@@ -188,7 +172,7 @@
     {
       "id": 11,
       "imgPath": "img/12.jpg",
-      "articul": "No. 012",
+      "articul": "No. 011",
       "title": "NeuroOffice (BioChronoss+)",
       "text": "Добавка для продуктивности",
       "price": "780 ",
@@ -212,7 +196,7 @@
     {
       "id": 12,
       "imgPath": "img/13.png",
-      "articul": "No. 013",
+      "articul": "No. 012",
       "title": "Immuno Shots (Acorus Balance)",
       "text": "Добавка для иммунитета",
       "price": "780 ",
@@ -238,7 +222,7 @@
     {
       "id": 13,
       "imgPath": "img/14.webp",
-      "articul": "No. 014",
+      "articul": "No. 013",
       "title": "Travelan (Olimp Labs)",
       "text": "Добавка для укачивания",
       "price": "780 ",
@@ -261,7 +245,7 @@
     {
       "id": 14,
       "imgPath": "img/15.png",
-      "articul": "No. 015",
+      "articul": "No. 014",
       "title": "Мелатонин (Эвалар)",
       "text": "Добавка для сна",
       "price": "780 ",
@@ -279,7 +263,7 @@
     {
       "id": 15,
       "imgPath": "img/16.webp",
-      "articul": "No. 016",
+      "articul": "No. 015",
       "title": "Chyawanprash (Dabur)",
       "text": "Добавка для иммунитета",
       "price": "780 ",
@@ -311,7 +295,7 @@
     {
       "id": 16,
       "imgPath": "img/17.png",
-      "articul": "No. 017",
+      "articul": "No. 016",
       "title": "Эликсир Иммунитет (Vital Elixir)",
       "text": "Добавка для иммунитета",
       "price": "780 ",
@@ -319,6 +303,22 @@
       "category": "immunity",
       "descr": [
         ""        
+      ]
+    },
+    {
+      "id": 17,
+      "imgPath": "img/10.png",
+      "articul": "No. 017",
+      "title": "Калия Йодид (Витамир)",
+      "text": "Йод",
+      "price": "780 ",
+      "mainCategory": "Бады",
+      "category": "immunity",
+      "descr": [
+        "Калия йодид 200мкг",
+        "Микрокристаллическая целлюлоза (носитель)",
+        "Лактоза",
+        "Магния стеарат (агент антислеживающий)"
       ]
     }
   ]

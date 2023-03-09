@@ -91,8 +91,11 @@ function tabs() {
 			const isHash = tabsBlock.hasAttribute('data-tabs-hash');
 			tabsContent = Array.from(tabsContent).filter(item => item.closest('[data-tabs]') === tabsBlock);
 			tabsTitles = Array.from(tabsTitles).filter(item => item.closest('[data-tabs]') === tabsBlock);
+
 			tabsContent.forEach((tabsContentItem, index) => {
+				console.log(tabsTitles[index]);
 				if (tabsTitles[index].classList.contains('_tab-active')) {
+				
 					if (tabsBlockAnimate) {
 						_slideDown(tabsContentItem, tabsBlockAnimate);
 					} else {
@@ -108,6 +111,7 @@ function tabs() {
 						tabsContentItem.hidden = true;
 					}
 				}
+				
 			});
 		}
 	}
