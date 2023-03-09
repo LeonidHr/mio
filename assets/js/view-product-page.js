@@ -601,6 +601,7 @@ async function viewProduct() {
     `);
   });
 
+  addBtnsClick();
 }
 
 viewProduct();
@@ -761,5 +762,19 @@ function removeSending() {
 
   elems.forEach(elem => {
     elem.classList.remove('_sending');
+  });
+}
+
+function addBtnsClick() {
+  const btns = document.querySelectorAll('.product-form__counters-btns button');
+  const addCartBtn = document.querySelector('.add-cart-counter');
+  const addCartBtnCount =  addCartBtn.querySelector('[data-add-cart-counter-count]');
+
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      addCartBtn.classList.add('is-add-cart');
+      addCartBtnCount.innerHTML = btn.dataset.num;
+    });
   });
 }
