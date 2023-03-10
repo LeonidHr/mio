@@ -48,8 +48,94 @@ async function viewProduct() {
   `
 
   path.insertAdjacentHTML("beforeend", pathContent);
-
   document.title = postsData[documetnId].title;
+
+
+  let img2 = '';
+  let imgMain2 = '';
+
+  if (postsData[documetnId].imgPath2) {
+    img2 = `
+      <div
+      class="splide__slide product__slide-tumbs js-product-gallery-tumbs-slide is-active is-visible is-current"
+      data-product-img-id="529685436"
+      data-product-img-index="0"
+      id="splide02-slide01"
+      style="
+        margin-right: 1rem;
+        width: calc(((100% + 1rem) / 7) - 1rem);
+      "
+      tabindex="0"
+    >
+      <div
+        class="img-ratio img-ratio_contain product__photo-tumb"
+      >
+        <div class="img-ratio__inner">
+          <picture>
+            <source
+              data-srcset="../${postsData[documetnId].imgPath2}"
+              type="image/webp"
+              class="lazyload entered"
+              data-ll-status="entered"
+              srcset="../${postsData[documetnId].imgPath2}"
+            />
+            <img
+              data-src="../${postsData[documetnId].imgPath2}"
+              class="lazyload entered loaded"
+              alt="${postsData[documetnId].title}"
+              data-ll-status="loaded"
+              src="../${postsData[documetnId].imgPath2}"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    `;
+
+    imgMain2 = `
+      <div
+        class="splide__slide product__slide-main"
+        data-product-img-id="529685437"
+        data-product-img-index="2"
+        id="splide01-slide03"
+        style="
+          margin-right: 1px;
+          width: calc(((100% + 1px) / 1) - 1px);
+        "
+        aria-hidden="true"
+      >
+        <a
+          class="img-ratio img-fit product__photo"
+          data-alt=""
+          data-fslightbox="product-photos-lightbox-423834350"
+          data-type="image"
+          href="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+          tabindex="-1"
+        >
+          <div class="img-ratio__inner">
+            <picture>
+              <source
+                data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                type="image/webp"
+                class="lazyload entered exited"
+                data-ll-status="entered"
+                srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+              />
+              <img
+                src="../img/" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+                class="lazyload entered loaded"
+                alt=""
+                data-ll-status="loaded"
+                src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
+              />
+            </picture>
+          </div>
+        </a>
+      </div>
+    `;
+  }
+
+
 
   const postEl = `
     <div id="${postsData[documetnId].id}" data-product data-gallery-type="all-photos" class="product is-zero-count-preorder">
@@ -59,7 +145,7 @@ async function viewProduct() {
           
         
 
-          <div class="splide__slide product__slide-main" data-product-img-id="529685434">
+          <div class="splide__slide product__slide-main">
             <a
               class="img-ratio img-fit product__photo"
               data-alt="${postsData[documetnId].title}"
@@ -93,12 +179,12 @@ async function viewProduct() {
               <div class="img-ratio__inner">
                 <picture>
                   <source
-                    data-srcset="../${postsData[documetnId].imgPath}"
+                    data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
                     type="image/webp"
                     class="lazyload"
                   />
                   <img
-                    src="../${postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath}"
+                    src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
                     class="lazyload"
                     alt="Triphala (Unifarma) Добовка для пищеварения"
                   />
@@ -116,17 +202,17 @@ async function viewProduct() {
               data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
               data-fslightbox="product-photos-lightbox"
               data-type="image"
-              href="../${postsData[documetnId].imgPath}"
+              href="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
             >
               <div class="img-ratio__inner">
                 <picture>
                   <source
-                    data-srcset="../${postsData[documetnId].imgPath}"
+                    data-srcset="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
                     type="image/webp"
                     class="lazyload"
                   />
                   <img
-                    src="../img/" data-src="../${postsData[documetnId].imgPath}"
+                    src="../img/" data-src="../${postsData[documetnId].imgPath2 ? postsData[documetnId].imgPath2 : postsData[documetnId].imgPath}"
                     class="lazyload"
                     alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
                   />
@@ -190,84 +276,8 @@ async function viewProduct() {
                     </div>
                   </a>
                 </div>
-                <div
-                  class="splide__slide product__slide-main is-next"
-                  data-product-img-id="529685434"
-                  data-product-img-index="1"
-                  id="splide01-slide02"
-                  style="
-                    margin-right: 1px;
-                    width: calc(((100% + 1px) / 1) - 1px);
-                  "
-                  aria-hidden="true"
-                >
-                  <a
-                    class="img-ratio img-fit product__photo"
-                    data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                    data-fslightbox="product-photos-lightbox-423834350"
-                    data-type="image"
-                    href="../${postsData[documetnId].imgPath}"
-                    tabindex="-1"
-                  >
-                    <div class="img-ratio__inner">
-                      <picture>
-                        <source
-                          data-srcset="../${postsData[documetnId].imgPath}"
-                          type="image/webp"
-                          class="lazyload entered exited"
-                          data-ll-status="entered"
-                          srcset="../${postsData[documetnId].imgPath}"
-                        />
-                        <img
-                          data-src="../${postsData[documetnId].imgPath}"
-                          class="lazyload entered loaded"
-                          alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                          data-ll-status="loaded"
-                          src="../${postsData[documetnId].imgPath}"
-                        />
-                      </picture>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="splide__slide product__slide-main"
-                  data-product-img-id="529685437"
-                  data-product-img-index="2"
-                  id="splide01-slide03"
-                  style="
-                    margin-right: 1px;
-                    width: calc(((100% + 1px) / 1) - 1px);
-                  "
-                  aria-hidden="true"
-                >
-                  <a
-                    class="img-ratio img-fit product__photo"
-                    data-alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                    data-fslightbox="product-photos-lightbox-423834350"
-                    data-type="image"
-                    href="../${postsData[documetnId].imgPath}"
-                    tabindex="-1"
-                  >
-                    <div class="img-ratio__inner">
-                      <picture>
-                        <source
-                          data-srcset="../${postsData[documetnId].imgPath}"
-                          type="image/webp"
-                          class="lazyload entered exited"
-                          data-ll-status="entered"
-                          srcset="../${postsData[documetnId].imgPath}"
-                        />
-                        <img
-                          src="../img/" data-src="../${postsData[documetnId].imgPath}"
-                          class="lazyload entered loaded"
-                          alt="Styx Naturcosmetic Эфирное масло Каяпут,10 мл"
-                          data-ll-status="loaded"
-                          src="../${postsData[documetnId].imgPath}"
-                        />
-                      </picture>
-                    </div>
-                  </a>
-                </div>
+                ${imgMain2}
+                
               </div>
             </div>
             <div class="splide__arrows">
@@ -277,6 +287,7 @@ async function viewProduct() {
                 aria-controls="splide01-track"
                 aria-label="Previous slide"
                 disabled=""
+                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -287,6 +298,7 @@ async function viewProduct() {
                 class="splide__arrow splide__arrow--next"
                 aria-controls="splide01-track"
                 aria-label="Next slide"
+                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"
@@ -385,6 +397,8 @@ async function viewProduct() {
                     </div>
                   </div>
                 </div>
+                ${img2}
+                
             
               </div>
             </div>
@@ -395,6 +409,7 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Previous slide"
+                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-left"
@@ -406,6 +421,7 @@ async function viewProduct() {
                 aria-controls="splide02-track"
                 disabled=""
                 aria-label="Next slide"
+                style="display: flex !important;"
               >
                 <span
                   class="splide__arrow-icon icon-angle-right"
