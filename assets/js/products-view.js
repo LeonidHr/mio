@@ -226,6 +226,7 @@ function getLastButtonClicksJson(name) {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('#main-filter').addEventListener("click", e => {
     if (e.target.closest('.tabs-prod__title')) {
+      addButtonClickToJson('all', 'filterClicks');
       addButtonClickToJson(e.target.closest('.tabs-prod__title').getAttribute('id'), 'mainFilterClicks');
       viewProducts(e.target.closest('.tabs-prod__title').getAttribute('id'), 'all');
     }
@@ -253,6 +254,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function removeLocalItems(name) {
+  // Проверяем, есть ли уже объект в локальном хранилище
+  let json = localStorage.getItem(name);
+  let buttonClicks = [];
+  if (json) {
+    buttonClicks = JSON.parse(json);
+  }
+
+  buttonClicks = [];
+
+  // Сохраняем обновленный объект в локальном хранилище
+  localStorage.setItem(name, JSON.stringify(buttonClicks));
+}
 
 function addButtonClickToJson(buttonNumber, name) {
   // Проверяем, есть ли уже объект в локальном хранилище
