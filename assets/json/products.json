@@ -329,7 +329,7 @@
       "text": "для нервной системы",
       "price": "780 ",
       "mainCategory": "Витамины и минералы",
-      "category": "think",
+      "category": "nerves",
       "descr": [
         "Ниацин - 100 mg;",
         "Витамин B5 - 50 mg;",
@@ -391,7 +391,7 @@
       "text": "для спокойной тренировки",
       "price": "780 ",
       "mainCategory": "Витамины и минералы",
-      "category": "other",
+      "category": "energy",
       "descr": [
         "Сахароза (60%)",
         "мальтодекстрин (21%)",
@@ -413,7 +413,7 @@
       "text": "для энергии",
       "price": "780 ",
       "mainCategory": "Витамины и минералы",
-      "category": "other",
+      "category": "energy",
       "descr": [
         ""
       ]
@@ -457,7 +457,7 @@
       "title": "Dias Collagen",
       "text": "для кожи, костей, мышц",
       "price": "780 ",
-      "mainCategory": "Витамины и минералы",
+      "mainCategory": "nerves",
       "category": "other",
       "descr": [
         "Магний - 100 мг",
@@ -485,7 +485,7 @@
       "text": "для нервной системы, расслабления мышц",
       "price": "780 ",
       "mainCategory": "Витамины и минералы",
-      "category": "think",
+      "category": "nerves",
       "descr": [
         "магний (магния цитрат) 400 мг",
         "целлюлоза",
@@ -553,7 +553,7 @@
       "text": "для кислорода",
       "price": "780 ",
       "mainCategory": "Витамины и минералы",
-      "category": "other",
+      "category": "nerves",
       "descr": [
         "коэнзим Q-10 (убихинон) — 30 мг",
         "витамин Е (токоферол) — 5 мг",
@@ -603,7 +603,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "легкоусвояемые соли калия и магния",
         "витамины А, Е, С, D, группы В",
@@ -623,7 +623,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "100% миндаль сладкий сырой"
       ]
@@ -636,7 +636,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "Смесь сывороточного белка (93%)",
         "изолят сывороточного протеина",
@@ -658,7 +658,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "27 г белка",
         "6,2 г аминокислот с разветвленными цепями (BCAA)",
@@ -673,7 +673,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "тростниковый сахар",
         "22% обезжиренного какао",
@@ -691,7 +691,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         ""
       ]
@@ -704,7 +704,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "семечки подсолнуха",
         "соль"
@@ -718,7 +718,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "витамины: B1, B2, B4, B5, B6, B9, K, E, C, PP, бетаин, лютеин, зеаксантин;",
         "макроэлементы: K, Ph, Ca, Na, Mg;",
@@ -735,7 +735,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "Витамин В4 - 63мг",
         "Витамин B3 - 4,987 мг",
@@ -758,7 +758,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Остальное",
-      "category": "food",
+      "category": "all",
       "descr": [
         "1/4 Cut Dry (40 г)"
       ]
@@ -771,7 +771,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "углеводы",
         "дубильные вещества",
@@ -796,7 +796,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "горькие гликозиды абсинтин и анабсинтин",
         "флавоноиды",
@@ -814,7 +814,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "0,2-0,8% эфирного масла",
         "терпен",
@@ -833,7 +833,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "магний",
         "марганец",
@@ -851,7 +851,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "тараксол",
         "тараксастерол",
@@ -868,7 +868,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "эфирное масло (до 1,2%)",
         "флавоноиды",
@@ -890,7 +890,7 @@
       "text": "",
       "price": "780 ",
       "mainCategory": "Травы",
-      "category": "food",
+      "category": "all",
       "descr": [
         "до 45% полисахарида инулина",
         "12,3% протеина",

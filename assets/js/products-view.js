@@ -10,8 +10,8 @@ async function viewProducts(categoryMain) {
   let postsData = data.products;
   const badsWrap = document.getElementById('all-bads');
 
+  changeFilters(categoryMain);
   viewAllProducts(postsData, badsWrap, categoryMain);
-  addClassToFirst();
 
   document.querySelector('#bads-nav').addEventListener("click", e => {
     if (e.target.closest('.splide__slide')) {
@@ -88,6 +88,35 @@ async function viewProducts(categoryMain) {
     }
     
   });
+}
+
+async function changeFilters(categoryMain) {
+  const data = await getData('./assets/json/filters.json');
+  let postsData = data.filters;
+  const filtersContainer = document.getElementById('filters');
+
+  filtersContainer.innerHTML = '';
+
+  postsData.forEach(el => {
+    if (el.category == categoryMain) {
+      el.content.forEach((item, i) => {
+        const postEl = `
+          <div id="${el.filters[i]}" class="splide__slide">
+            <div
+              class="tabs__head-item">
+              <div class="special-products__head">
+                <div class="widget_heading tabs__head-label">${el.content[i]}</div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        filtersContainer.insertAdjacentHTML("beforeend", postEl);
+      });
+    }
+  });
+
+  addClassToFirst();
 }
 
 function addClassToFirst() {
